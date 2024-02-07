@@ -69,7 +69,7 @@ Webcam.set({
     
     if(results[0].label == "rock")
     {
-        document.getElementById("update_emoji").innerHTML = "&#128304;";  
+        document.getElementById("update_emoji").innerHTML = "&#129304;";  
     }
     
     if(results[0].label == "thumbs up")
@@ -103,7 +103,7 @@ Webcam.set({
     
     if(results[1].label == "rock")
     {
-        document.getElementById("update_emoji2").innerHTML = "&#128304;";  
+        document.getElementById("update_emoji2").innerHTML = "&#129304;";  
     }
     
     if(results[1].label == "thumbs up")
@@ -136,7 +136,7 @@ Webcam.set({
     
     if(results[2].label == "rock")
     {
-        document.getElementById("update_emoji3").innerHTML = "&#128304;";  
+        document.getElementById("update_emoji3").innerHTML = "&#129304;";  
     }
     
     if(results[2].label == "thumbs up")
