@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <title>Hand gestures application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+    <h3 class="btn btn-success heading">Gesture recognition app
+  <br>
+  	
+<span>&#128073;</span>
+<span>&#128075;</span>
+<span>&#128076;</span>
+<span>&#128077;</span>
+<span>&#128078;</span>
+<span>&#128079;</span>
+<span>&#128080;</span>
+<span>&#128400;</span>
+    </h3>
+      <br><br>
+
+      <p  id="recognition"  style="font-size: 17px;">Recognizes 6 gestures, which are:&#128073;
+        hand gun,
+        &#128075;
+        high five,
+        &#128076;
+        okay,
+        &#128077;
+        thumbs up,
+        &#129304;
+        rock sign,
+        &#9996;
+        and victory.
+      	<br>
+      </p>
+
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Webcam View - </label>
+        <div id="camera"> </div>
+        <br><br>
+
+                <button onclick="take_snapshot();" class="btn btn-success">Capture Image</button>
+           
+    </div>
+
+<div class="col-md-4 col-sm-12 col-xs-12">
+  <label id="Guess">Guess 1 - </label>
+  <p class="gesture_name" id="result_gesture_name"></p>
+  <p class="emoji" id="update_emoji"></p>
+
+  <label id="Guess">Guess 2 - </label>
+  <p class="gesture_name" id="result_gesture_name2"></p>
+  <p class="emoji" id="update_emoji2"></p>
+
+  <label id="Guess">Guess 3 - </label>
+  <p class="gesture_name" id="result_gesture_name3"></p>
+  <p class="emoji" id="update_emoji3"></p>
+
+</div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Snapshot - </label>
+        <div id="result"> </div>
+        <br><br>
+<button onclick="check();" class="btn btn-warning">Predict Gesture</button>  
+
+      </div>
+        <br><br>
+
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 

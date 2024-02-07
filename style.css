@@ -1,0 +1,28 @@
+body
+{
+    background: green;
+}
+
+#recognition
+{
+    background-color: goldenrod;
+}
+
+#Guess
+{
+font-size: 20px;
+color: rgb(79, 159, 251);
+}
+
+
+
+.gesture_name
+{
+    font-size: 23px;
+    color: rgb(84, 0, 120);
+}
+
+.emoji
+{
+font-size: 30px;
+}
